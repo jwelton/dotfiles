@@ -1,6 +1,6 @@
 # Variables
 dir=~/.dotfiles
-files=".bash_profile"
+files=".bash_profile .git-completion.bash .git-prompt.sh"
 
 # change to the dotfiles directory
 echo "Changing to the $dir directory"
