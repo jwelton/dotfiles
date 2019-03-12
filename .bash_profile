@@ -2,6 +2,11 @@
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
+# nvm setup (when installed via Homebrew)
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
 # use Sublime as the default editor
 export EDITOR="subl -w"
 
