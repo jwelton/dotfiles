@@ -19,3 +19,8 @@ brew cask install zoomus
 brew cask install docker
 brew cask install spotify
 brew cask install sublime-text
+brew cask install whatsapp
+brew cask install postman
+brew cask install iterm2
+
+brew cleanup
