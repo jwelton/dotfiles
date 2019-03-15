@@ -22,5 +22,6 @@ brew cask install sublime-text
 brew cask install whatsapp
 brew cask install postman
 brew cask install iterm2
+brew cask install charles
 
 brew cleanup
