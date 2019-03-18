@@ -34,7 +34,7 @@ function simOpenURL() {
 
 # show compile time stats for each .swift file
 function swifttime() {
- 	xcodebuild -workspace "$1.xcworkspace" -scheme "$1" clean build OTHER_SWIFT_FLAGS="-Xfrontend -debug-time-function-bodies" | grep [1-9].[0-9]ms | sort -n
+  xcodebuild -workspace "$1.xcworkspace" -scheme "$1" clean build OTHER_SWIFT_FLAGS="-Xfrontend -debug-time-function-bodies" | grep [1-9].[0-9]ms | sort -n
 }
 
 # remove all merged git branches
@@ -50,4 +50,8 @@ function deleteAllBranches() {
 # convert a video into a .gif
 function gifme() {
   ffmpeg -i $1 -vf scale=360:-1 -r 20 $1.gif
+}
+
+function dockerStopAll() {
+  docker stop $(docker ps -a -q)
 }
