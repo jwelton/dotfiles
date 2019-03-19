@@ -9,7 +9,6 @@ brew install ffmpeg
 brew install swiftplate
 brew install carthage
 brew install swiftlint
-brew install node
 brew install nvm
 
 brew cask install 1password
