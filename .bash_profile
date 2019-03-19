@@ -2,6 +2,9 @@
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
+# Add fastlane into our PATH
+export PATH="$HOME/.fastlane/bin:$PATH"
+
 # nvm setup (when installed via Homebrew)
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
