@@ -50,6 +50,11 @@ function deleteAllBranches() {
    git branch | grep -v \* | xargs git branch -D 
 }
 
+# quickly open all conflicted files in the default editor
+function fix() {
+	git diff --name-only | uniq | xargs $EDITOR
+}
+
 # convert a video into a .gif
 function gifme() {
   ffmpeg -i $1 -vf scale=360:-1 -r 20 $1.gif
