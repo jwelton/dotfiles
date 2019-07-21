@@ -11,7 +11,6 @@ brew install carthage
 brew install swiftlint
 brew install nvm
 
-brew cask install 1password
 brew cask install slack
 brew cask install visual-studio-code
 brew cask install zoomus
