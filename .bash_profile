@@ -34,8 +34,8 @@ function recordSim() {
 }
 
 # open a URL in the current iOS simulator
-function simOpenURL() {
-  xcrun simctl openurl booted $0
+function simOpen() {
+  xcrun simctl openurl booted $1
 }
 
 # show compile time stats for each .swift file
