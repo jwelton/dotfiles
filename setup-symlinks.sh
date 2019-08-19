@@ -20,4 +20,4 @@ source ~/.bash_profile
 # Setup custom Xcode theme. Credit goes to: https://github.com/hdoria/xcode-themes
 echo "Creating symlink for XCode theme."
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-ln -s -f ./Space\ Gray.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+ln ./Space\ Gray.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
