@@ -17,7 +17,7 @@ echo "Initializing new bash settings"
 source ~/.bash_profile
 
 
-# Setup custom Xcode theme. Credit goes to: https://github.com/hdoria/xcode-themes
+# Setup custom Xcode theme. Credit goes to: https://github.com/bojan/xcode-one-dark
 echo "Creating symlink for XCode theme."
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
-ln ./Space\ Gray.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+ln ./One\ Dark.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes
