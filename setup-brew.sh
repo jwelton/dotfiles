@@ -3,7 +3,6 @@
 
 brew upgrade
 
-brew install git
 brew install cocoapods
 brew install ffmpeg
 brew install swiftplate
