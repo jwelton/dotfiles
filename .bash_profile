@@ -4,6 +4,7 @@ source ~/.git-prompt.sh
 
 # Add fastlane into our PATH
 export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 # Setup for rbenv
 eval "$(rbenv init -)"
