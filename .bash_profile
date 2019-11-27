@@ -31,7 +31,7 @@ function whatsMyIP() {
 
 # start recording the current iOS simulator
 function recordSim() {
-  xcrun simctl io booted recordVideo ~/Desktop/simulatorRecording.mov
+  xcrun simctl io booted recordVideo ~/Desktop/simulatorRecording.mp4
 }
 
 # open a URL in the current iOS simulator
