@@ -4,9 +4,19 @@ source ~/.git-prompt.sh
 
 # Add fastlane into our PATH
 export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/ws/transferwise-ios:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/cisco/anyconnect/bin:$PATH
+
+export VISUAL="subl --wait"
 
 export DANGER_GITHUB_API_TOKEN='e57530e24daab397c79364698329be7b62a46f7f'
+
+export ANDROID_HOME='/Users/jake.welton/Library/Android/sdk'
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Add mergepbx into PATH
 export PATH="~/.mergepbx:$PATH"
@@ -133,14 +143,11 @@ fi
 
 # Regenrate the project files
 function gp() {
-  # Kill xcode
-  kill $(ps aux | grep 'Xcode' | awk '{print $2}')
+  bootstrap "$@"
+}
 
-  # Generate project files and workspace
-  ./scripts/GenerateProject.command
-
-  # Open newly generated workspace
-  open ./Wise.xcworkspace
+function g() {
+  ./gradlew "$@"
 }
 
 function fixAudio() {
@@ -168,3 +175,14 @@ function dockerStopAll() {
 function wiseDataContainer() {
   xcrun simctl get_app_container booted com.transferwise.Transferwise data
 }
+export GPG_TTY=$(tty)
+export GPG_TTY=$(tty)
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="$HOME/.local/share/mise/shims:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Created by `pipx` on 2024-09-19 09:08:35
+export PATH="$PATH:/Users/jake.welton/.local/bin"
