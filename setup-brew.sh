@@ -3,21 +3,19 @@
 
 brew upgrade
 
-# brew install cocoapods
-brew install ffmpeg
-# brew install swiftplate
-# brew install carthage
-# brew install swiftlint
+brew install gnupg
+brew install rbenv
 
-# brew cask install slack
-brew cask install visual-studio-code
-# brew cask install zoomus
-# brew cask install docker
-brew cask install spotify
-# brew cask install sublime-text
-# brew cask install whatsapp
-brew cask install postman
-# brew cask install iterm2
-# brew cask install charles
+brew install --cask slack
+brew install --cask visual-studio-code
+brew install --cask zoom
+brew install --cask spotify
+brew install --cask sublime-text
+brew install --cask whatsapp
+brew install --cask postman
+brew install --cask iterm2
+brew install --cask chatgpt
+brew install --cask obsidian
+brew install --cask proxyman
 
 brew cleanup
